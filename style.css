@@ -1,0 +1,58 @@
+h1 {
+    color: gray;
+    font-size: 50px;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+/* START BELOW THIS LINE */
+
+/* 1 */
+
+@media (maxwidth: 800px) {
+    body {
+        background-color: navy;
+    }
+}
+
+/* 2 */
+
+@media (maxwidth: 600px) {
+    body {
+        background-color: orangered;
+    }
+}
+
+/* 3 */
+
+@media (min-width: 600px), (max-height: 400px) {
+    #one {
+        border: 10px dashed gray;
+    }
+    #three {
+        border: 10px dashed gray;
+    }
+}
+
+/* or */
+
+/* @media (min-width: 600px), (max-height: 400px){
+    #one, #three  {
+      border: 10px dashed gray;
+    } */
+
+/* 4 */
+
+@media (min-width: 900px), (max-height: 500px) {
+    #two {
+        border-top: 10px dashed gray;
+    }
+    /* 5 */
+    @media (orientation: landscape){
+h1 {
+    display: flex;
+}
+}
