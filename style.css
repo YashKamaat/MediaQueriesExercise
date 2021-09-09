@@ -12,7 +12,7 @@ body {
 
 /* 1 */
 
-@media (maxwidth: 800px) {
+@media (max-width: 800px) {
     body {
         background-color: navy;
     }
@@ -52,7 +52,42 @@ body {
     }
     /* 5 */
     @media (orientation: landscape){
-h1 {
+body {
     display: flex;
 }
+}
+
+/* 6 */
+@media (orientation: portrait) {
+    body {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+/* BONUS */
+
+/* 1 */
+@media print  {
+    
+    h2 {
+      text-transform: uppercase;
+      color:  springgreen;
+    }
+  }
+/* 2 */
+@media (max-width: 800px){
+    #two {
+      background-color: navy;
+    }
+  }
+  @media (max-width: 600px) {
+    #two {
+      color: orange;
+    }
+  }
+/* 3 */
+@media (min-width:750px)(max-width:775px)and (min-height:550px)(max-height:575px){
+    body {
+        font-style: italic;
+    }
 }
